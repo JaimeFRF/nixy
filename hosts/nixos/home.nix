@@ -35,7 +35,7 @@
     ../../home/system/mime
     ../../home/system/udiskie
     ../../home/system/clipman
-
+  
   ];
 
   home = {
