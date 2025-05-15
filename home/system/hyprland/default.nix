@@ -179,7 +179,7 @@ in {
       layerrule = [ "noanim, launcher" "noanim, ^ags-.*" ];
 
       input = {
-        kb_layout = pt;
+        kb_layout = "pt";
 
         follow_mouse = 1;
         sensitivity = 0.5;
