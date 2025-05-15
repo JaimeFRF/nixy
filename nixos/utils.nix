@@ -1,7 +1,6 @@
 { pkgs, config, inputs, ... }:
 let
   hostname = config.var.hostname;
-  keyboardLayout = config.var.keyboardLayout;
   configDir = config.var.configDirectory;
   timeZone = config.var.timeZone;
   defaultLocale = config.var.defaultLocale;
@@ -38,7 +37,7 @@ in {
   services = {
     xserver = {
       enable = true;
-      xkb.layout = keyboardLayout;
+      xkb.layout = "pt";
       xkb.variant = "";
     };
     gnome.gnome-keyring.enable = true;
@@ -47,7 +46,7 @@ in {
       resyncTimer = "10m";
     };
   };
-  console.keyMap = keyboardLayout;
+  console.keyMap = "pt-latin1";
 
   environment.variables = {
     XDG_DATA_HOME = "$HOME/.local/share";
@@ -94,7 +93,6 @@ in {
     xdg-utils
     wget
     curl
-    vim
   ];
 
   xdg.portal = {

@@ -6,19 +6,11 @@
 
     # Programs
     ../../home/programs/kitty
-    ../../home/programs/nvim
     ../../home/programs/shell
     ../../home/programs/fetch
     ../../home/programs/git
     ../../home/programs/git/signing.nix
-    ../../home/programs/spicetify
-    ../../home/programs/nextcloud
     ../../home/programs/thunar
-    ../../home/programs/lazygit
-    ../../home/programs/zen
-    ../../home/programs/duckduckgo-colorscheme
-    ../../home/programs/discord
-    ../../home/programs/tailscale
     ../../home/programs/anyrun
 
     # Scripts
@@ -45,7 +37,6 @@
 
     packages = with pkgs; [
       # Apps
-      bitwarden # Password manager
       vlc # Video player
       blanket # White-noise app
       obsidian # Note taking app
@@ -56,7 +47,6 @@
       resources
       gnome-clocks
       gnome-text-editor
-      mpv # Video player
       figma-linux
 
       # Dev
@@ -86,6 +76,7 @@
       # Backup
       brave
       vscode
+      vesktop
     ];
 
     # Import my profile picture, used by the hyprpanel dashboard
